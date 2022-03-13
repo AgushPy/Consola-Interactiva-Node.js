@@ -32,11 +32,11 @@ const crearArchivoTabla = async(base = 5, listar = false, hasta = 1) => {
 
         //Si no ponemos un path de base va a tomar lacarpeta donde se ejucta el archivo de node
         //Atrapar en try y catch para poder manejar el error
-        fs.writeFileSync(`tabla-${base}.txt`,salida, )
+        fs.writeFileSync(`./tablas/tabla-${base}.txt`,salida, )
 
         // console.log(`tabla-${base}.txt creado`);
 
-        return `./tablas/tabla-${base}.txt creado`
+        return `tabla-${base}.txt creado`
     }catch{
         throw 'ERROR!'
 
